@@ -11,7 +11,7 @@ export interface Support {
     text: string;
 }
 
-export interface ResponseUser {
+export interface ResponseUsers {
     page: number;
     per_page: number;
     total: number;
@@ -33,3 +33,20 @@ export interface ResponseCreate {
     createdAt: Date;
 }
 
+//Modelos para o getUser por Id
+
+export interface ResponseUser{
+    data: User
+}
+
+//Modelos para o update
+export interface RequestUpdate {
+    name: string;
+    job: string;
+}
+
+export interface ResponseUpdate {
+    name: string;
+    job: string;
+    updatedAt: Date;
+}
