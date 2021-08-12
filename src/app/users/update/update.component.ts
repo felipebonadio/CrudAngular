@@ -22,7 +22,7 @@ export class UpdateComponent implements OnInit {
         name: `${res.data.first_name} ${res.data.last_name}`,
         job: ''
       }
-    })
+    });
   }
 
   update(){
